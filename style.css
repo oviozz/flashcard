@@ -1,0 +1,197 @@
+
+body{
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    width: 1000px;
+}
+
+.title{
+    color: darkblue;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000060;
+    width: 800px;
+
+}
+
+
+.add-card, .delete-card{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #2c9a2c;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    list-style-type: none;
+    margin-top: 1rem;
+
+}
+
+.items {
+    background-color: #f5f53a;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
+
+    width: 300px;
+    height: auto;
+    overflow-wrap: break-word;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+}
+
+.content-items{
+    padding: 3px 20px 10px 20px;
+}
+
+.question{
+    color: black;
+    font-size: 1.5rem;
+    padding: 3px 0px 10px 20px;
+
+}
+
+.answer{
+    color: black;
+    font-size: 1.5rem;
+
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 1px;
+}
+
+.ans{
+    display: none;
+}
+
+.hvr{
+    color: rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+.answer:hover .hvr{
+    display: none;
+}
+.answer:hover .ans{
+    display: block;
+}
+
+
+
+.btn{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-btn{
+    border: 2px solid #676767;
+    font-size: 1rem;
+}
+
+.know{
+    background-color: #99CC66;
+}
+.delete{
+    background-color: #FF6666;
+    width: 70%;
+}
+
+.add-items{
+    display: none;
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    background-color: #2c9a2c;
+    border-radius: 15px;
+    width: 400px;
+    height: 400px;
+    padding: 10px 0px 0px 20px;
+
+}
+
+.add-flashcard{
+    text-align: center;
+    color: white;
+}
+
+.lbl{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.add-input{
+    color: #696969;
+    width: 90%;
+    font-size: 1.4rem;
+    padding-left: 10px;
+    border-radius: 10px;
+    height: 55px;
+    border: none;
+    margin-top: -10px;
+}
+
+.item-create{
+    margin-top: 15px;
+    margin-left: 7px;
+    width: 90%;
+    font-size: 1.4rem;
+    background-color: #FFCC00;
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    color: #0c730c;
+
+}
+
+.item-create:hover{
+    background-color: #e5bd00;
+
+}
+
+.fa-square-xmark{
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.fa-square-xmark:hover{
+    color: #cecece;
+}
+
+
+.delete-card{
+    background-color: #FF6666;
+}
+
+.fa-trash, .fa-solid{
+    padding-right: 5px;
+}
+
+
+.add-card:hover{
+    background-color: #227722;
+}
+.delete-card:hover{
+    background-color: #FF6666;
+}
